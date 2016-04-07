@@ -1,4 +1,4 @@
-android-vm
+Vagrant image with Android SDK &amp; NDK
 ==========
 
 Automated provisioning and configuration of an Ubuntu VM containing the Android development environment, including Android SDK, Android NDK using the Vagrant DevOps tool with Chef and shell-scripts.
