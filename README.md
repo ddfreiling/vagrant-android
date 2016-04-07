@@ -1,18 +1,19 @@
 android-vm
 ==========
 
-Automated provisioning and configuration of an Ubuntu VM containing the Android development environment, including Android SDK, Eclipse &amp; the Android NDK using the Vagrant DevOps tool with Chef and shell-scripts.
+Automated provisioning and configuration of an Ubuntu VM containing the Android development environment, including Android SDK, Android NDK using the Vagrant DevOps tool with Chef and shell-scripts.
 
-This automated VM installation and configuration uses the excellent DevOps tool, [Vagrant](http://downloads.vagrantup.com/) which works with both VirtualBox (free) and VMware Fusion &amp; Workstation (paid plug-in) in addition to several [Community Chef Cookbooks](http://community.opscode.com/cookbooks).
+This automated VM installation and configuration uses the DevOps tool [Vagrant](http://downloads.vagrantup.com/) which works with both VirtualBox (free) and VMware Fusion &amp; Workstation (paid plug-in) in addition to several [Community Chef Cookbooks](http://community.opscode.com/cookbooks).
 
 Currently, it will provision an Android VM for development with the following specifications,
 
 - Ubuntu Trusty64 VM
 	- Memory size: 2048 MB
 	- 2 vCPU
-- Ubuntu Unity Desktop as the UI launched at startup (see the provision.sh section "Install a desktop for the Android graphical tooling" for other options)
-- [Android ADT Bundle 20130729 (SDK r22.0.5 &amp; Eclipse)](http://dl.google.com/android/adt/adt-bundle-linux-x86_64-20130729.zip)
-- [Android NDK r9](http://dl.google.com/android/ndk/android-ndk-r9-linux-x86_64.tar.bz2)
+- Ubuntu Unity Desktop as the UI launched at startup
+    - See the provision.sh section "Install a desktop for the Android graphical tooling" for other options)
+- [Android SDK 20160407 (SDK r24.4.1 &amp; Eclipse)](http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz)
+- [Android NDK r11c](http://dl.google.com/android/repository/android-ndk-r11c-linux-x86_64.zip)
 
 ## Install Vagrant
 
