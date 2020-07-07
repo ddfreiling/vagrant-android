@@ -48,14 +48,14 @@ Vagrant.configure(2) do |config|
   # config.vm.provision "shell", inline: "sudo sed -i 's/allowed_users=.*$/allowed_users=anybody/' /etc/X11/Xwrapper.config"
   
   config.vm.provision :chef_solo do |chef|
-
+    chef.version = "14.12.9"
     chef.cookbooks_path = "cookbooks"
 
     chef.add_recipe "apt"
     chef.add_recipe "git"
-    chef.add_recipe "build-essential" 
+    chef.add_recipe "build-essential" # The functionality of this cookbook is now built into Chef 14+ in the [build_essential resource](https://docs.chef.io/resource_build_essential.html)
     chef.add_recipe "java" 
-    chef.add_recipe "sqlite-dev"
+    chef.add_recipe "sqlite"
     chef.add_recipe "vim"
 
   end
